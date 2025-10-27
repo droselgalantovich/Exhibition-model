@@ -1,7 +1,7 @@
 export const VideoConference = () => {
   return (
     <div>
-      <div className='w-[1319px] bg-deep-blue top-0 left-1/2 transform -translate-x-1/2 absolute flex items-center justify-center px-[383px] pt-[30px] pb-[43px] text-extra text-white leading-[1] rounded-b-[60px]'>
+      <div className='w-[1319px] bg-deep-blue top-0 left-1/2 transform -translate-x-1/2 absolute flex items-center justify-center pt-[30px] pb-[43px] text-extra text-white leading-[1] rounded-b-[60px]'>
         Видеоконференцсвязь
       </div>
       <div className='mt-[136px] text-large '>
