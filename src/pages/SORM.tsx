@@ -156,44 +156,44 @@ export const SORM = () => {
               textClassName='text-medium'
               py={true}
               onClick={() => {
-                setActiveModal('modal8');
+                setActiveModal('modal12');
               }}
             />
           </div>
         </div>
         <div className='w-[1495px] bg-light-gray flex flex-col gap-[35px] rounded-[60px]'>
           <div className='flex justify-center items-center bg-dark-gray py-5 rounded-[60px] text-large text-center'>
-            Приказ Госкомсвязи <br /> №268 от 19.11.2012
+            Приказ Госкомсвязи № 573 от 29.10.2018
           </div>
           <div className='px-[60px] py-[30px] flex-wrap  flex gap-[27px]'>
             <Advantages
               border={true}
-              text='XSM.MUX.70/268'
+              text='ЯКОРЬ-ИСБД'
               showIcon={false}
               textClassName='text-medium'
               py={true}
               onClick={() => {
-                setActiveModal('modal1');
+                setActiveModal('modal5');
               }}
             />
             <Advantages
               border={true}
-              text='Пассивный СОРМ-1'
+              text='ЯКОРЬ-DMR-ИСБД'
               showIcon={false}
               textClassName='text-medium'
               py={true}
               onClick={() => {
-                setActiveModal('modal2');
+                setActiveModal('modal11');
               }}
             />
             <Advantages
               border={true}
-              text='XSM.MUX'
+              text='ЯКОРЬ-TTR-ИСБД'
               showIcon={false}
               textClassName='text-medium'
               py={true}
               onClick={() => {
-                setActiveModal('modal7');
+                setActiveModal('modal6');
               }}
             />
           </div>
