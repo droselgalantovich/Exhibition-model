@@ -4,7 +4,7 @@ export const YakorIsbd = () => {
         <div className='w-[1319px] bg-deep-blue top-0 left-1/2 transform -translate-x-1/2 absolute flex items-center justify-center px-[383px] pt-[30px] pb-[43px] text-extra text-white leading-[1] rounded-b-[60px]'>
             ЯКОРЬ-ИСБД
         </div>
-        <div className='mt-[85px] w-[1905px] m-auto'>
+        <div className='mt-[108px] w-[1905px] m-auto'>
             <img src='/images/YakorIsbd.png' alt='' />
         </div>
         <div className='mt-[27px] text-large'>

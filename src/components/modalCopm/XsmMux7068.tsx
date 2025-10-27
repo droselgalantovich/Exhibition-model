@@ -4,7 +4,7 @@ export const XsmMux7068 = () => {
           <div className='w-[1319px] bg-deep-blue top-0 left-1/2 transform -translate-x-1/2 absolute flex items-center justify-center px-[383px] pt-[30px] pb-[43px] text-extra text-white leading-[1] rounded-b-[60px]'>
               XSM.MUX.70/268
           </div>
-          <div className='mt-[132px] w-[2000px] m-auto'>
+          <div className='mt-[175px] w-[2000px] m-auto'>
               <img src='/images/XSMMUX.png' alt='' />
           </div>
           <div className='mt-[89px] text-large'>

@@ -4,7 +4,7 @@ export const PassivnyiSorm1 = () => {
         <div className='w-[1319px] bg-deep-blue top-0 left-1/2 transform -translate-x-1/2 absolute flex items-center justify-center pt-[30px] pb-[43px] text-extra text-white leading-[1] rounded-b-[60px]'>
             Пассивный СОРМ-1
         </div>
-        <div className='mt-[236px] text-large'>
+        <div className='mt-[279px] text-large'>
             Решение СОРМ LIMON — это аппаратно-программный комплекс, предназначенный для<br></br>
             пассивного наблюдения за вызовами для NGN и TDM-сетей. Подключение к пульту<br></br>
             управления СОРМ осуществляется по стандартному интерфейсу СОРМ (тракт E1,<br></br>
