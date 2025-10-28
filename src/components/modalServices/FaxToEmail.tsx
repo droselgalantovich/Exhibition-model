@@ -6,7 +6,7 @@ export const FaxToEmail = () => {
           Подсистема приема-передачи <br />
           факсимильных сообщений
         </div>
-        <div className='text-extra font-bold text-deep-blue'>Fax2Email</div>
+        <div className='text-extraBig font-bold text-deep-blue'>Fax2Email</div>
       </div>
       <div className='mt-[495px] text-extra font-medium leading-[120%]'>
         Упрощайте документооборот. Конвертация входящих факсов в электронный

@@ -5,7 +5,7 @@ export const NotificationSystem = () => {
         <div className='text-extra text-white font-medium w-[1319px] h-[151px] flex items-center justify-center bg-deep-blue  rounded-br-[60px]'>
           Система оповещения
         </div>
-        <div className='text-extraBig font-bold text-deep-blue'>SN2</div>
+        <div className='text-extraBig font-bold text-deep-blue mt-5'>SN2</div>
       </div>
       <div className='mt-[136px] text-large leading-[120%]'>
         Массово рассылайте важные сообщения (по звонкам, SMS, e-mail) по
