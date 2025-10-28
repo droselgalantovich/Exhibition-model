@@ -5,7 +5,9 @@ export const UnifiedManagementSystem = () => {
         <div className='text-extra text-white font-medium pt-[30px] pl-[174px] pb-[43px] pr-[175px] bg-deep-blue  rounded-br-[60px]'>
           Единая система управления
         </div>
-        <div className='text-extraBig font-bold text-deep-blue'>Globus</div>
+        <div className='text-extraBig font-bold text-deep-blue mt-5'>
+          Globus
+        </div>
       </div>
       <div className='mt-[156px] text-extra font-medium'>
         Управляйте всеми модулями АТС нового поколения через единую <br />
