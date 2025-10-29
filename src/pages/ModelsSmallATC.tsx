@@ -1,9 +1,13 @@
 import {useState} from "react";
 import {Modal} from "../components/modal/Modal.tsx";
-import {mAccessMAK} from "../components/modalATC/mAccessMAK.tsx";
+import {MAccessMAK} from "../components/modalATC/MAccessMAK.tsx";
+import {IPATCCometa} from "../components/modalATC/IPATCCometa.tsx";
+import {ImSwitch5SSW5} from "../components/modalATC/ImSwitch5SSW5.tsx";
 
 export const ModelsSmallATC = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isModalMAccessMAKOpen, setIsModalMAccessMAKOpen] = useState(false);
+    const [isModalIPATCCometaOpen, setIsModalIPATCCometaOpen] = useState(false);
+    const [isModalImSwitch5SSW5Open, setIsModalImSwitch5SSW5Open] = useState(false);
 
     return (
         <div className='mt-[200px]'>
@@ -13,7 +17,7 @@ export const ModelsSmallATC = () => {
             <div className='flex bg-[url("/images/ModuleBack.png")] w-[2856px] h-[1496px] m-auto'>
                 <img className='ml-[120px] w-[709px] h-[998px] mt-[450px]' src='/images/ModuleServer.png' alt=''/>
                 <div>
-                    <div onClick={() => setIsModalOpen(true)}
+                    <div onClick={() => setIsModalMAccessMAKOpen(true)}
                          className='flex border-2 border-black rounded-[60px] w-[1662px] h-[120px] ml-[196px] mt-[57px] items-center'>
                         <p className='text-extra border-2 border-black rounded-[60px] w-[120px] h-[120px] text-center leading-[120px]'>
                             1
@@ -23,8 +27,8 @@ export const ModelsSmallATC = () => {
                         </p>
                     </div>
 
-                    <div
-                        className='flex border-2 border-black rounded-[60px] w-[1800px] h-[120px] ml-[196px] mt-[40px] items-center'>
+                    <div onClick={() => setIsModalIPATCCometaOpen(true)}
+                         className='flex border-2 border-black rounded-[60px] w-[1800px] h-[120px] ml-[196px] mt-[40px] items-center'>
                         <p className='text-extra border-2 border-black rounded-[60px] w-[120px] h-[120px] text-center leading-[120px]'>
                             2
                         </p>
@@ -38,8 +42,8 @@ export const ModelsSmallATC = () => {
                         <img className='w-[792px] h-[566px] ml-[44px]' src='/images/ModuleMAKfrontA.png' alt=''/>
                     </div>
 
-                    <div
-                        className='flex border-2 border-black rounded-[60px] w-[1349px] h-[120px] ml-[196px] mt-[40px] items-center'>
+                    <div onClick={() => setIsModalImSwitch5SSW5Open(true)}
+                         className='flex border-2 border-black rounded-[60px] w-[1349px] h-[120px] ml-[196px] mt-[40px] items-center'>
                         <p className='text-extra border-2 border-black rounded-[60px] w-[120px] h-[120px] text-center leading-[120px]'>
                             3
                         </p>
@@ -54,12 +58,30 @@ export const ModelsSmallATC = () => {
                     </div>
 
                     <Modal
-                        isOpen={isModalOpen}
-                        onClose={() => setIsModalOpen(false)}
-                        width='w-[2839px]'
-                        height='h-[1904px]'
+                        isOpen={isModalMAccessMAKOpen}
+                        onClose={() => setIsModalMAccessMAKOpen(false)}
+                        width='w-[2530px]'
+                        height='h-[1424px]'
                     >
+                        <MAccessMAK/>
+                    </Modal>
 
+                    <Modal
+                        isOpen={isModalIPATCCometaOpen}
+                        onClose={() => setIsModalIPATCCometaOpen(false)}
+                        width='w-[2530px]'
+                        height='h-[1424px]'
+                    >
+                        <IPATCCometa/>
+                    </Modal>
+
+                    <Modal
+                        isOpen={isModalImSwitch5SSW5Open}
+                        onClose={() => setIsModalImSwitch5SSW5Open(false)}
+                        width='w-[2530px]'
+                        height='h-[1424px]'
+                    >
+                        <ImSwitch5SSW5/>
                     </Modal>
                 </div>
             </div>
