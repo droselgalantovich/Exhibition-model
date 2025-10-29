@@ -5,7 +5,7 @@ export const WebConsole = () => {
         <div className='text-extra text-white font-medium w-[1319px] h-[151px] flex items-center justify-center bg-deep-blue  rounded-br-[60px]'>
           Веб-консоль управления
         </div>
-        <div className='text-extraBig font-bold text-deep-blue'>WEbTO</div>
+        <div className='text-extraBig font-bold text-deep-blue mt-5'>WEbTO</div>
       </div>
       <div className='mt-[136px] text-large'>
         Удобный веб-интерфейс для администрирования модуля VoIP-ядра.

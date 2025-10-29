@@ -5,7 +5,9 @@ export const IpPbxCore = () => {
         <div className='text-extra text-white font-medium pt-[30px] px-[453px] pb-[43px]  bg-deep-blue  rounded-br-[60px]'>
           Ядро IP-АТС
         </div>
-        <div className='text-extraBig font-bold text-deep-blue'>imSwitch5</div>
+        <div className='text-extraBig font-bold text-deep-blue mt-5'>
+          imSwitch5
+        </div>
       </div>
       <div className='mt-[136px] text-large'>
         Построение узлов местной связи с использованием технологии коммутации

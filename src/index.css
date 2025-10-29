@@ -2,17 +2,18 @@
 
 /* stylelint-disable-next-line at-rule-no-unknown */
 @theme {
-    --color-light-blue: rgba(225, 239, 255, 1);
-    --color-deep-blue: rgba(0, 53, 117, 1);
-    --color-orange-main: rgba(255, 102, 0, 1);
-    --color-dark-gray: rgba(233, 233, 233, 1);
-    --color-light-gray: rgba(242, 242, 242, 1);
-    --font-family-montserrat: 'Montserrat', 'sans-serif';
-    --shadow-main: 0px 10px 30.600000381469727px 0px rgba(255, 255, 255, 0.75);
-    --text-extraBig: 96px;
-    --text-extra: 64px;
-    --text-large: 48px;
-    --text-medium: 32px;
+  --color-deep-blue: rgba(0, 53, 117, 1);
+  --color-orange-main: rgba(255, 102, 0, 1);
+  --color-dark-gray: rgba(233, 233, 233, 1);
+  --color-light-gray: rgba(242, 242, 242, 1);
+  --font-family-montserrat: 'Montserrat', 'sans-serif';
+  --shadow-main: 0px 10px 30.600000381469727px 0px rgba(255, 255, 255, 0.75);
+  --text-veryBig: 128px;
+  --text-extraBig: 96px;
+  --text-extra: 64px;
+  --text-large: 48px;
+  --text-medium: 32px;
+  --text-bigmedium: 36px;
 }
 
 /* Montserrat Font */

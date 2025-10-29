@@ -5,7 +5,7 @@ export const OperationalCommunicationConsole = () => {
         <div className='text-extra text-white font-medium pt-[30px] pl-[174px] pb-[43px] pr-[175px] bg-deep-blue  rounded-br-[60px]'>
           Пульт оперативной связи
         </div>
-        <div className='text-extraBig font-bold text-deep-blue'>ОНИКС</div>
+        <div className='text-extraBig font-bold text-deep-blue mt-5'>ОНИКС</div>
       </div>
       <div className='mt-[136px] text-extra font-medium'>
         <div className='flex flex-col gap-0 leading-[120%]'>

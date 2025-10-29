@@ -4,7 +4,7 @@ export const AudioConference = () => {
       <div className='w-[1319px] h-[204px] flex items-center justify-center  text-center bg-deep-blue top-0 left-1/2 transform -translate-x-1/2 absolute  text-extra text-white leading-[1] rounded-b-[60px]'>
         Аудиоконференции: модерируемые <br />и немодерируемые
       </div>
-      <div className='mt-[116px] text-large '>
+      <div className='mt-[136px] text-large '>
         <div className='flex flex-col gap-0 leading-[120%]'>
           <div className='flex items-start pl-6 gap-6'>
             <span>•</span>{' '}

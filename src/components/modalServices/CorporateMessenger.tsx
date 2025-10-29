@@ -5,7 +5,7 @@ export const CorporateMessenger = () => {
         <div className='text-extra text-white font-medium pt-[30px] pl-[163px] pb-[43px] pr-[163px] bg-deep-blue  rounded-br-[60px]'>
           Корпоративный мессенджер
         </div>
-        <div className='text-extraBig font-bold text-deep-blue'>
+        <div className='text-extraBig font-bold text-deep-blue mt-5'>
           ПРОТЕЙ-Юником
         </div>
       </div>
