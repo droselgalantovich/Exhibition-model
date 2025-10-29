@@ -11,6 +11,8 @@ import {Services} from './pages/Services';
 import {ATCpreview} from './pages/ATCpreview';
 import {SmallATCConnection} from "./pages/SmallATCConnection.tsx";
 import {ModelsSmallATC} from "./pages/ModelsSmallATC.tsx";
+import {CentralNodeMediumATC} from "./pages/CentralNodeMediumATC.tsx";
+import {ObjectNodeMediumATC} from "./pages/ObjectNodeMediumATC.tsx";
 
 function App() {
     return (
@@ -19,6 +21,8 @@ function App() {
                 <Route index element={<Home/>}/>
                 <Route path='Services' element={<Services/>}/>
                 <Route path='SmallATCConnection' element={<SmallATCConnection/>}/>
+                <Route path='CentralNodeMediumATC' element={<CentralNodeMediumATC/>}/>
+                <Route path='ObjectNodeMediumATC' element={<ObjectNodeMediumATC/>}/>
                 <Route path='ModelsSmallATC' element={<ModelsSmallATC/>}/>
                 <Route path='ATCpreview' element={<ATCpreview/>}/>
                 <Route path='ATCsmall' element={<ATCSmall/>}/>
