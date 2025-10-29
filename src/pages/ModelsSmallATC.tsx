@@ -1,13 +1,20 @@
+import {useState} from "react";
+import {Modal} from "../components/modal/Modal.tsx";
+import {mAccessMAK} from "../components/modalATC/mAccessMAK.tsx";
+
 export const ModelsSmallATC = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     return (
         <div className='mt-[200px]'>
             <p className='text-extraBig font-bold absolute text-right ml-[200px]'>
-                Варианты<br />подключения<br />аналоговых абонентов
+                Варианты<br/>подключения<br/>аналоговых абонентов
             </p>
             <div className='flex bg-[url("/images/ModuleBack.png")] w-[2856px] h-[1496px] m-auto'>
                 <img className='ml-[120px] w-[709px] h-[998px] mt-[450px]' src='/images/ModuleServer.png' alt=''/>
-                <div >
-                    <div className='flex border-2 border-black rounded-[60px] w-[1662px] h-[120px] ml-[196px] mt-[57px] items-center'>
+                <div>
+                    <div onClick={() => setIsModalOpen(true)}
+                         className='flex border-2 border-black rounded-[60px] w-[1662px] h-[120px] ml-[196px] mt-[57px] items-center'>
                         <p className='text-extra border-2 border-black rounded-[60px] w-[120px] h-[120px] text-center leading-[120px]'>
                             1
                         </p>
@@ -16,7 +23,8 @@ export const ModelsSmallATC = () => {
                         </p>
                     </div>
 
-                    <div className='flex border-2 border-black rounded-[60px] w-[1800px] h-[120px] ml-[196px] mt-[40px] items-center'>
+                    <div
+                        className='flex border-2 border-black rounded-[60px] w-[1800px] h-[120px] ml-[196px] mt-[40px] items-center'>
                         <p className='text-extra border-2 border-black rounded-[60px] w-[120px] h-[120px] text-center leading-[120px]'>
                             2
                         </p>
@@ -30,7 +38,8 @@ export const ModelsSmallATC = () => {
                         <img className='w-[792px] h-[566px] ml-[44px]' src='/images/ModuleMAKfrontA.png' alt=''/>
                     </div>
 
-                    <div className='flex border-2 border-black rounded-[60px] w-[1349px] h-[120px] ml-[196px] mt-[40px] items-center'>
+                    <div
+                        className='flex border-2 border-black rounded-[60px] w-[1349px] h-[120px] ml-[196px] mt-[40px] items-center'>
                         <p className='text-extra border-2 border-black rounded-[60px] w-[120px] h-[120px] text-center leading-[120px]'>
                             3
                         </p>
@@ -43,6 +52,15 @@ export const ModelsSmallATC = () => {
                         <img className='w-[820px] h-[87px]' src='/images/IP_ATCback.png' alt=''/>
                         <img className='w-[876px] h-[233px] ml-[61px]' src='/images/IP_ATCfront.png' alt=''/>
                     </div>
+
+                    <Modal
+                        isOpen={isModalOpen}
+                        onClose={() => setIsModalOpen(false)}
+                        width='w-[2839px]'
+                        height='h-[1904px]'
+                    >
+
+                    </Modal>
                 </div>
             </div>
         </div>
