@@ -17,7 +17,7 @@ export const ModelsSmallATC = () => {
             <div className='flex bg-[url("/images/ModuleBack.png")] w-[2856px] h-[1496px] m-auto'>
                 <img className='ml-[120px] w-[709px] h-[998px] mt-[450px]' src='/images/ModuleServer.png' alt=''/>
                 <div>
-                    <div onClick={() => setIsModalMAccessMAKOpen(true)}
+                    <div onClick={() => setIsModalImSwitch5SSW5Open(true)}
                          className='flex border-2 border-black rounded-[60px] w-[1662px] h-[120px] ml-[196px] mt-[57px] items-center'>
                         <p className='text-extra border-2 border-black rounded-[60px] w-[120px] h-[120px] text-center leading-[120px]'>
                             1
@@ -27,7 +27,7 @@ export const ModelsSmallATC = () => {
                         </p>
                     </div>
 
-                    <div onClick={() => setIsModalIPATCCometaOpen(true)}
+                    <div onClick={() => setIsModalMAccessMAKOpen(true)}
                          className='flex border-2 border-black rounded-[60px] w-[1800px] h-[120px] ml-[196px] mt-[40px] items-center'>
                         <p className='text-extra border-2 border-black rounded-[60px] w-[120px] h-[120px] text-center leading-[120px]'>
                             2
@@ -42,7 +42,7 @@ export const ModelsSmallATC = () => {
                         <img className='w-[792px] h-[566px] ml-[44px]' src='/images/ModuleMAKfrontA.png' alt=''/>
                     </div>
 
-                    <div onClick={() => setIsModalImSwitch5SSW5Open(true)}
+                    <div onClick={() => setIsModalIPATCCometaOpen(true)}
                          className='flex border-2 border-black rounded-[60px] w-[1349px] h-[120px] ml-[196px] mt-[40px] items-center'>
                         <p className='text-extra border-2 border-black rounded-[60px] w-[120px] h-[120px] text-center leading-[120px]'>
                             3
