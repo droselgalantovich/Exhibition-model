@@ -5,7 +5,9 @@ export const CallRecording = () => {
         <div className='text-extra text-white font-medium w-[1319px] h-[151px] flex items-center justify-center bg-deep-blue  rounded-br-[60px]'>
           Запись разговоров
         </div>
-        <div className='text-extraBig font-bold text-deep-blue'>PhoneUP</div>
+        <div className='text-extraBig font-bold text-deep-blue mt-5'>
+          PhoneUP
+        </div>
         <div className='flex items-center ml-[31px]'>
           <img src='/images/Aurus.png' alt='' />
         </div>
