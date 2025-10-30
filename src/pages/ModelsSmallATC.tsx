@@ -1,8 +1,8 @@
 import {useState} from "react";
 import {Modal} from "../components/modal/Modal.tsx";
 import {MAccessMAK} from "../components/modalATC/MAccessMAK.tsx";
-import {IPATCCometa} from "../components/modalATC/IPATCCometa.tsx";
 import {ImSwitch5SSW5} from "../components/modalATC/ImSwitch5SSW5.tsx";
+import {IPATCCometa} from "../components/modalATC/IPATCCometa.tsx";
 
 export const ModelsSmallATC = () => {
     const [isModalMAccessMAKOpen, setIsModalMAccessMAKOpen] = useState(false);
