@@ -8,6 +8,13 @@ export const ATCMedium = () => {
 
     return (
         <div className='pl-[200px] pt-[143px] pb-[244px] inline-flex flex-row '>
+            <Link to='/CentralNodeMediumATC' className='absolute w-[150px] h-[150px] mt-[550px] ml-[1150px]'/>
+            <Link to='/CentralNodeMediumATC' className='absolute w-[150px] h-[150px] mt-[650px] ml-[120px]' />
+            <Link to='/CentralNodeMediumATC' className='absolute w-[150px] h-[150px] mt-[1250px] ml-[50px]'/>
+            <Link to='/CentralNodeMediumATC' className='absolute w-[150px] h-[150px] mt-[1200px] ml-[1060px]'/>
+            <Link to='/CentralNodeMediumATC' className='absolute w-[150px] h-[150px] mt-[900px] ml-[950px]'/>
+            <Link to='/ObjectNodeMediumATC' className='absolute w-[300px] h-[300px] mt-[460px] ml-[500px]'/>
+
             <div className='bg-deep-blue h-[1600px] rounded-[60px]'>
                 <p className='text-large leading-[100%] text-white text-center mt-[46px] mb-[57px]'>
                     Телефонизация на примере<br />промышленных холдингов

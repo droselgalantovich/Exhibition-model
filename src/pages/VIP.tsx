@@ -6,10 +6,7 @@ import { Popup } from '../components/popup/Popup';
 
 export const VIP = () => {
   const [activeModal, setActiveModal] = useState<string | null>(null);
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const [isPopupOpen1, setIsPopupOpen1] = useState(false);
-  const [isPopupOpen2, setIsPopupOpen2] = useState(false);
-  const [isPopupOpen3, setIsPopupOpen3] = useState(false);
+  const [activePopup, setActivePopup] = useState<number | null>(null);
 
   const modalComponents: Record<string, React.ComponentType> = {
     modal1: SchemaConnection,
@@ -18,6 +15,113 @@ export const VIP = () => {
   const ActiveModalComponent = activeModal
     ? modalComponents[activeModal]
     : null;
+
+    const popupContent = {
+        1: {
+            position: {top: '80px', left: '1830px'},
+            content: (
+                <div className='flex flex-col gap-6 max-w-[1031px]'>
+                    <p className='text-bigmedium font-semibold'>
+                        Каждому VIP-пользователю настраивается индивидуальная логика
+                        обработки входящих и исходящих звонков, которая учитывает стиль
+                        работы, помощников и особенности взаимодействия.
+                    </p>
+                    <div className='space-y-2 text-[32px]'>
+                        <p className='flex items-start text-start'>
+                            ✅ Управляемая идентификация при исходящих <br />
+                            вызовах на внутренние и внешние номера
+                        </p>
+                        <p className='flex items-start'>
+                            ✅ Автоматический дозвон при недоступности
+                        </p>
+                        <p className='flex items-start'>✅ Вызовы между VIP-абонентами</p>
+                        <p className='flex items-start'>
+                            ✅ Интеграция с шеф-секретарскими группами <br />
+                            (ШСГ)
+                        </p>
+                        <p className='flex items-start'>
+                            ✅ Поддержка нескольких рабочих мест
+                        </p>
+                    </div>
+                </div>
+            )
+        },
+        2: {
+            position: {top: '320px', left: '1830px'},
+            content: (
+                <div className='flex flex-col gap-6 max-w-[1031px] '>
+                    <p className='text-bigmedium font-semibold'>
+                        Позволяет выстроить гибкую модель обработки вызовов между
+                        руководителем, его секретарями и ассистентами.
+                    </p>
+                    <div className='space-y-2 text-[32px]'>
+                        <p className='flex items-start text-start'>
+                            ✅ Входящий звонок обрабатывается <br />
+                            не напрямую, а через помощников
+                        </p>
+                        <p className='flex items-start'>
+                            ✅ Автоматический дозвон при недоступности
+                        </p>
+                        <p className='flex items-start'>
+                            ✅ Eсли кто-то из секретарей недоступен —<br /> вызов принимает
+                            другой
+                        </p>
+                        <p className='flex items-start'>
+                            ✅ Настраивается логика переадресации, <br />
+                            очередности, приоритета
+                        </p>
+                    </div>
+                </div>
+            )
+        },
+        3: {
+            position: {top: '560px', left: '1830px'},
+            content: (
+                <div className='flex flex-col gap-6 max-w-[1031px] '>
+                    <p className='text-bigmedium font-semibold'>
+                        Коммуникации VIP защищены на каждом <br />
+                        уровне:
+                    </p>
+                    <div className='space-y-2 text-[32px]'>
+                        <p className='flex items-start text-start'>
+                            ✅ Выделенный сегмент сети для VIP-АТС
+                        </p>
+                        <p className='flex items-start'>
+                            ✅ Взаимодействие с корпоративной сетью <br />
+                            через SBC
+                        </p>
+                        <p className='flex items-start'>
+                            ✅ Полное шифрование сигнального и <br /> голосового трафика
+                        </p>
+                        <p className='flex items-start'>✅ Запрет на запись звонков</p>
+                    </div>
+                </div>
+            )
+        },
+        4: {
+            position: {top: '680px', left: '1830px'},
+            content: (
+                <div className='flex flex-col gap-6 max-w-[1031px] '>
+                    <p className='text-bigmedium font-semibold'>
+                        Исключает утечку чувствительной <br /> информации в процессе вызова:
+                    </p>
+                    <div className='space-y-2 text-[32px]'>
+                        <p className='flex items-start text-start'>
+                            ✅ Не отображаются ФИО и номера VIP- <br /> абонента
+                        </p>
+                        <p className='flex items-start'>
+                            ✅ При переадресации скрыт внутренний <br /> и мобильный номер
+                        </p>
+                        <p className='flex items-start'>
+                            ✅ Даже при передаче вызова на сотовый — <br /> вызывающий абонент
+                            не узнаёт конечный <br />
+                            номер
+                        </p>
+                    </div>
+                </div>
+            )
+        }
+    }
 
   return (
     <div className='px-[200px] pt-[163px] pb-[50px]  flex justify-between items-center '>
@@ -56,7 +160,7 @@ export const VIP = () => {
             <div
               className='z-100 cursor-pointer'
               onClick={() => {
-                setIsPopupOpen(!isPopupOpen);
+                  setActivePopup(activePopup === 1 ? null : 1)
               }}
             >
               <Advantages
@@ -73,7 +177,7 @@ export const VIP = () => {
             <div
               className='z-100 cursor-pointer'
               onClick={() => {
-                setIsPopupOpen1(!isPopupOpen1);
+                  setActivePopup(activePopup === 2 ? null : 2)
               }}
             >
               <Advantages
@@ -90,7 +194,7 @@ export const VIP = () => {
             <div
               className='z-100 cursor-pointer'
               onClick={() => {
-                setIsPopupOpen2(!isPopupOpen2);
+                  setActivePopup(activePopup === 3 ? null : 3)
               }}
             >
               {' '}
@@ -107,7 +211,7 @@ export const VIP = () => {
             <div
               className='z-100 cursor-pointer'
               onClick={() => {
-                setIsPopupOpen3(!isPopupOpen3);
+                  setActivePopup(activePopup === 4 ? null : 4)
               }}
             >
               <Advantages
@@ -174,98 +278,18 @@ export const VIP = () => {
         </Modal>
       )}
 
-      <Popup isOpen={isPopupOpen} position={{ top: '80px', left: '1850px' }}>
-        <div className='flex flex-col gap-6 max-w-[1031px]'>
-          <p className='text-bigmedium font-semibold'>
-            Каждому VIP-пользователю настраивается индивидуальная логика
-            обработки входящих и исходящих звонков, которая учитывает стиль
-            работы, помощников и особенности взаимодействия.
-          </p>
-          <div className='space-y-2 text-[32px]'>
-            <p className='flex items-start text-start'>
-              ✅ Управляемая идентификация при исходящих <br />
-              вызовах на внутренние и внешние номера
-            </p>
-            <p className='flex items-start'>
-              ✅ Автоматический дозвон при недоступности
-            </p>
-            <p className='flex items-start'>✅ Вызовы между VIP-абонентами</p>
-            <p className='flex items-start'>
-              ✅ Интеграция с шеф-секретарскими группами <br />
-              (ШСГ)
-            </p>
-            <p className='flex items-start'>
-              ✅ Поддержка нескольких рабочих мест
-            </p>
-          </div>
-        </div>
-      </Popup>
-      <Popup isOpen={isPopupOpen1} position={{ top: '330px', left: '1850px' }}>
-        <div className='flex flex-col gap-6 max-w-[1031px] '>
-          <p className='text-bigmedium font-semibold'>
-            Позволяет выстроить гибкую модель обработки вызовов между
-            руководителем, его секретарями и ассистентами.
-          </p>
-          <div className='space-y-2 text-[32px]'>
-            <p className='flex items-start text-start'>
-              ✅ Входящий звонок обрабатывается <br />
-              не напрямую, а через помощников
-            </p>
-            <p className='flex items-start'>
-              ✅ Автоматический дозвон при недоступности
-            </p>
-            <p className='flex items-start'>
-              ✅ Eсли кто-то из секретарей недоступен —<br /> вызов принимает
-              другой
-            </p>
-            <p className='flex items-start'>
-              ✅ Настраивается логика переадресации, <br />
-              очередности, приоритета
-            </p>
-          </div>
-        </div>
-      </Popup>
-      <Popup isOpen={isPopupOpen2} position={{ top: '560px', left: '1850px' }}>
-        <div className='flex flex-col gap-6 max-w-[1031px] '>
-          <p className='text-bigmedium font-semibold'>
-            Коммуникации VIP защищены на каждом <br />
-            уровне:
-          </p>
-          <div className='space-y-2 text-[32px]'>
-            <p className='flex items-start text-start'>
-              ✅ Выделенный сегмент сети для VIP-АТС
-            </p>
-            <p className='flex items-start'>
-              ✅ Взаимодействие с корпоративной сетью <br />
-              через SBC
-            </p>
-            <p className='flex items-start'>
-              ✅ Полное шифрование сигнального и <br /> голосового трафика
-            </p>
-            <p className='flex items-start'>✅ Запрет на запись звонков</p>
-          </div>
-        </div>
-      </Popup>
-      <Popup isOpen={isPopupOpen3} position={{ top: '680px', left: '1850px' }}>
-        <div className='flex flex-col gap-6 max-w-[1031px] '>
-          <p className='text-bigmedium font-semibold'>
-            Исключает утечку чувствительной <br /> информации в процессе вызова:
-          </p>
-          <div className='space-y-2 text-[32px]'>
-            <p className='flex items-start text-start'>
-              ✅ Не отображаются ФИО и номера VIP- <br /> абонента
-            </p>
-            <p className='flex items-start'>
-              ✅ При переадресации скрыт внутренний <br /> и мобильный номер
-            </p>
-            <p className='flex items-start'>
-              ✅ Даже при передаче вызова на сотовый — <br /> вызывающий абонент
-              не узнаёт конечный <br />
-              номер
-            </p>
-          </div>
-        </div>
-      </Popup>
+        {/* Popups */}
+        {activePopup &&
+            popupContent[activePopup as keyof typeof popupContent] && (
+                <Popup
+                    isOpen={true}
+                    position={
+                        popupContent[activePopup as keyof typeof popupContent].position
+                    }
+                >
+                    {popupContent[activePopup as keyof typeof popupContent].content}
+                </Popup>
+            )}
     </div>
   );
 };
