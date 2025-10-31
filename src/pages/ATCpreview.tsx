@@ -12,7 +12,7 @@ export const ATCpreview = () => {
       </p>
       <div className='flex flex-row mt-[96px] gap-[74px]'>
         <div className='flex flex-col gap-10.5 justify-center items-center'>
-          <img src='/images/ATCSmall.png' alt='ATC Small' />{' '}
+          <img className='h-[1036px]' src='/images/ATCSmall.png' alt='ATC Small' />{' '}
           <Link
             className='px-10 text-large py-5 border-[2px] rounded-[60px]'
             to='/ATCSmall'
